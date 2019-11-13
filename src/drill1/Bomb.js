@@ -15,11 +15,11 @@ class Bomb extends React.Component{
         this.interval = setInterval(() => {
             //console.log('setInterval')
             this.setState({
-
                 datetime: new Date().getSeconds(),
             });
         }, 1000);
     }
+    
     handleChange = () => {
         if(this.state.datetime % 3 === 0){
             console.log('boom')
@@ -44,7 +44,7 @@ class Bomb extends React.Component{
 render(){
     console.log(this.state.datetime)
     return(
-        <div onChange={this.handleChange}><span>{this.handleChange()}</span></div>
+        <div onChange={this.handleChange}>{this.handleChange()}</div>
     );
 }
 
