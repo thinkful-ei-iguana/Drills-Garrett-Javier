@@ -37,6 +37,8 @@ class Bomb extends React.Component{
 
 
     componentWillUnmount(){
+        //need to place this somwhere in my handle
+        //handlechange function to stop at a certain number
         clearInterval(this.interval) 
     }
 
