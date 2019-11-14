@@ -1,12 +1,12 @@
 import React from 'react';
 
 import './App.css';
-import RouletteGun2 from './drill1/RouletteGun2'
+import Accordion from './drill1/Accordion'
 
 function App() {
   return (
     <div className="App">
-      <RouletteGun2 />
+      <Accordion />
     </div>
   );
 }
